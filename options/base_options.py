@@ -32,6 +32,8 @@ class BaseOptions():
         parser.add_argument('--ndf', type=int, default=64, help='# of discrim filters in the first conv layer')
         parser.add_argument('--netD', type=str, default='basic', help='specify discriminator architecture [attention_basic | basic | advanced(PA4)]. ')
         parser.add_argument('--netG', type=str, default='basic', help='specify generator architecture [attention_basic | basic | advanced(PA4)]')
+        #parser.add_argument('--netD', type=str, default='attention_basic', help='specify discriminator architecture [attention_basic | basic | advanced(PA4)]. ')
+        #parser.add_argument('--netG', type=str, default='attention_basic', help='specify generator architecture [attention_basic | basic | advanced(PA4)]')
         parser.add_argument('--norm', type=str, default='instance', help='instance normalization or batch normalization [instance | batch | none]')
         parser.add_argument('--init_type', type=str, default='normal', help='network initialization [normal | xavier | kaiming | orthogonal]')
         parser.add_argument('--init_gain', type=float, default=0.02, help='scaling factor for normal, xavier and orthogonal.')
